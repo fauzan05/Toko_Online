@@ -50,7 +50,7 @@
                         <div class="col-lg-5">
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Name </label>
-                                <input type="text" name="name" class="form-control" id="exampleFormControlInput1" value="<?= $model['productName'] ?>">
+                                <input type="text" name="name" class="form-control" id="exampleFormControlInput1" value="<?= $model['productName'] ?? "" ?>">
                             </div>
                             <div class="mb-3">
                                 <label for="exampleSelectInput" class="form-label">Category </label>
@@ -91,7 +91,7 @@
                             </div>
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Color </label>
-                                <input type="text" name="color" class="form-control" id="exampleFormControlInput1" value="<?= $model['productColor'] ?>">
+                                <input type="text" name="color" class="form-control" id="exampleFormControlInput1" value="<?= $model['productColor'] ?? "" ?>">
                             </div>
                             <div class="mb-3">
                                 <label for="exampleSelectInput" class="form-label">Capacity </label>
@@ -174,15 +174,15 @@
                             </div>
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Stock </label>
-                                <input type="text" name="stock" class="form-control" id="exampleFormControlInput1" value="<?= $model['productStock'] ?>">
+                                <input type="text" name="stock" class="form-control" id="exampleFormControlInput1" value="<?= $model['productStock'] ?? 0 ?>">
                             </div>
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Price </label>
-                                <input type="text" name="price" class="form-control" id="exampleFormControlInput1" value="<?= $model['productPrice'] ?>">
+                                <input type="text" name="price" class="form-control" id="exampleFormControlInput1" value="<?= $model['productPrice'] ?? 0 ?>">
                             </div>
                             <div class="mb-3">
                                 <label for="exampleFormControlTextarea1" class="form-label">Description</label>
-                                <textarea class="form-control" name="description" id="exampleFormControlTextarea1" rows="5"><?= trim($model['productDescription']) ?></textarea>
+                                <textarea class="form-control" name="description" id="exampleFormControlTextarea1" rows="5"><?= trim($model['productDescription'] ?? "" ) ?></textarea>
                             </div>
                         </div>
                         <button type="submit" class="btn btn-primary">Add</button>

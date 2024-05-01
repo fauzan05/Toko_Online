@@ -54,7 +54,7 @@ class UserController
         $request->phoneNumber = $_POST['phoneNumber'];
         $request->jobs = $_POST['jobs'];
         $request->address = $_POST['address'];
-        $request->status = 'user';
+        $request->status = 'admin';
         try {
             $this->userService->register($request);
             //redirect to users/login

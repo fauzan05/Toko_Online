@@ -395,10 +395,10 @@ class AdminController
                 "title" => "iStore Admin",
                 'logo' => 'iStore',
                 "user" => [
-                    "username" => $user->username
+                    "username" => $user->username ?? ""
                 ],
-                "showAllUsers" => $users,
-                "countAllUsers" => $countUsers
+                "showAllUsers" => $users ?? [],
+                "countAllUsers" => $countUsers ?? 0
             ]);
         }else{
             View::Render(

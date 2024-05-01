@@ -7,7 +7,6 @@
     <ul class="nav-menu-admin">
         <li class="nav-item-admin"><a class="nav-link-admin" href="/toko_online/public/">Dashboard</a></li>
       <li class="nav-item-admin"><a class="nav-link-admin" href="/toko_online/public/admin/productManagement">Product</a></li>
-      <li class="nav-item-admin"><a class="nav-link-admin" href="#">Category</a></li>
       <li class="nav-item-admin"><a class="nav-link-admin" href="/toko_online/public/admin/userManagement">User</a></li>
       <li class="nav-item-admin"><a class="nav-link-admin" href="#">Order</a></li>
       <li class="nav-item-admin"><a class="nav-link-admin" href="#">Sales Report</a></li>
