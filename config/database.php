@@ -7,12 +7,12 @@ function getDatabaseConfig():array
             "test" => [
                 "url" => "mysql:host=localhost:3306;dbname=toko_online_test",
                 "username" => "root",
-                "password" => ""
+                "password" => "root"
             ],
             "prod" => [
                 "url" => "mysql:host=localhost:3306;dbname=toko_online",
                 "username" => "root",
-                "password" => ""
+                "password" => "root"
             ]
         ]
     ];

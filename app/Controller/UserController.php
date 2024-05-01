@@ -4,7 +4,6 @@ namespace Fauzannurhidayat\Php\TokoOnline\Controller;
 
 use Fauzannurhidayat\Php\TokoOnline\App\View;
 use Fauzannurhidayat\Php\TokoOnline\Config\Database;
-use Fauzannurhidayat\Php\TokoOnline\Domain\User;
 use Fauzannurhidayat\Php\TokoOnline\Exception\ValidationException;
 use Fauzannurhidayat\Php\TokoOnline\Model\AddToCartRequest;
 use Fauzannurhidayat\Php\TokoOnline\Model\BuyNowRequest;

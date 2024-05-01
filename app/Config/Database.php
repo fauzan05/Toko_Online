@@ -8,7 +8,7 @@ class Database
 {
     private static ?PDO $pdo = null;
 
-    public static function getConnection(string $env = "test"):PDO
+    public static function getConnection(string $env = "prod"):PDO
     {
         if(self::$pdo==null)
         {

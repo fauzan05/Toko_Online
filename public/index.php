@@ -10,7 +10,7 @@ use Fauzannurhidayat\Php\TokoOnline\Controller\UserController;
 use Fauzannurhidayat\Php\TokoOnline\Middleware\MustLoginMiddleware;
 use Fauzannurhidayat\Php\TokoOnline\Middleware\MustNotLoginMiddleware;
 
-Database::getConnection('prod');
+Database::getConnection("prod");
 
 //Home controller
 Router::add('GET', '/', HomeController::class, 'index');
@@ -51,6 +51,5 @@ Router::add('GET', '/admin/productManagement', AdminController::class, 'productM
 Router::add('GET', '/admin/userManagement', AdminController::class, 'userManagement', [MustLoginMiddleware::class]);
 Router::add('GET', '/admin/detailProduct', AdminController::class, 'productDetail', [MustLoginMiddleware::class]);
 Router::add('GET', '/admin/detailUser', AdminController::class, 'userDetail', [MustLoginMiddleware::class]);
-
 
 Router::run();
